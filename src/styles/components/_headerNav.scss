@@ -1,0 +1,54 @@
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.header__item {
+  transition: transform 0.2s linear;
+
+  &:not(:nth-child(3)):hover {
+    transform: translateY(-5px);
+  }
+}
+
+.header__link {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(255, 255, 255) !important;
+}
+
+.header__button {
+  position: relative;
+
+  width: 50px;
+  height: 50px;
+}
+
+.header__counter {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 15px;
+  width: 15px;
+
+  font-size: 10px;
+
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
